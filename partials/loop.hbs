@@ -1,0 +1,13 @@
+<div class="slider" id="ghost-slider">
+  {{#get "posts" limit="3"}}
+    {{#foreach posts}}
+      <article class="slide">
+        <a href="{{url}}">
+          <img src="{{img_url feature_image size="s"}}" alt="{{title}}">
+          <h3>{{title}}</h3>
+          <time datetime="{{date format="YYYY-MM-DD"}}">{{date format="MMM D"}}</time>
+        </a>
+      </article>
+    {{/foreach}}
+  {{/get}}
+</div>

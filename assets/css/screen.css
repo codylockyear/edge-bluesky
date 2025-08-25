@@ -1,0 +1,29 @@
+/* CSS reset & variables */
+:root {
+  --gap: 1rem;
+  --maxw: 1100px;
+  --accent: #0085ff;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;line-height:1.6;color:#111;background:#fafafa}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block;border-radius:6px}
+
+/* Navigation */
+nav{background:#fff;padding:.75rem var(--gap);box-shadow:0 1px 3px rgba(0,0,0,.06)}
+nav ul{display:flex;gap:1rem;list-style:none;font-weight:600}
+
+/* Section titles */
+.section-title{margin:2rem var(--gap) .5rem;font-size:1.25rem;font-weight:700}
+
+/* Horizontal sliders */
+.slider{display:flex;gap:var(--gap);overflow-x:auto;padding:0 var(--gap);scroll-snap-type:x mandatory}
+.slide{scroll-snap-align:start;flex:0 0 85%;max-width:300px;background:#fff;border-radius:8px;box-shadow:0 2px 4px rgba(0,0,0,.04);padding:1rem}
+.slide h3{margin:.5rem 0;font-size:1rem}
+.slide p{font-size:.9rem;color:#444}
+.slide time{font-size:.75rem;color:#888}
+
+/* Small tweak for desktop */
+@media(min-width:600px){
+  .slide{flex:0 0 250px}
+}
