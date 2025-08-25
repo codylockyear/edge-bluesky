@@ -1,5 +1,7 @@
 {{!< default}}
 <main class="page">
   <h1>Work</h1>
-  <p>Portfolio pieces go here (use Ghost “Work” tag or page blocks).</p>
+  {{#page}}
+    <div class="content">{{content}}</div>
+  {{/page}}
 </main>

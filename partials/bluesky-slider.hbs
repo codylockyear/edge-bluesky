@@ -1,13 +1,3 @@
 <div class="slider" id="bluesky-slider">
-  <!-- content injected by fetch_bsky.py → data/bluesky.json -->
-  {{#get "custom" data="bluesky"}}
-    {{#foreach bluesky limit="5"}}
-      <article class="slide">
-        <a href="https://bsky.app/profile/{{../handle}}/post/{{id}}" target="_blank">
-          <p>{{text}}</p>
-          <time datetime="{{created_at}}">{{date created_at format="MMM D"}}</time>
-        </a>
-      </article>
-    {{/foreach}}
-  {{/get}}
+  <!-- If you add data/bluesky.json later, Ghost will show the posts here -->
 </div>

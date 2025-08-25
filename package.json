@@ -1,0 +1,8 @@
+{
+  "name": "edge-bluesky-fixed",
+  "description": "Mobile-first Ghost theme with Bluesky feed slider",
+  "version": "1.0.0",
+  "engines": { "ghost": ">=5.0.0" },
+  "author": { "email": "you@example.com" },
+  "keywords": ["ghost-theme", "mobile-first", "bluesky"]
+}
